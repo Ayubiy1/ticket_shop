@@ -6,13 +6,14 @@ import dayjs from "dayjs";
 import { useNavigate } from "react-router";
 
 import "./style.css";
+import Loading from "../loding";
 
-const Cards = ({ type, title }) => {
+const Cards = ({ type, title, ticketsData, isLoading }) => {
   const navigate = useNavigate();
 
-  const { data: ticketsData } = useQuery("tickets-data", () => {
-    return axios.get("http://localhost:3001/tickets");
-  });
+  // const { data: ticketsData, isLoading } = useQuery("tickets-data", () => {
+  //   return axios.get("http://localhost:3001/tickets");
+  // });
 
   return (
     <div className="mt-10">
@@ -21,6 +22,7 @@ const Cards = ({ type, title }) => {
 
         <FaAngleRight />
       </h2>
+
       <Row className={"flex items-start justify-center sm:justify-start p-2"}>
         {ticketsData?.data
           ?.filter((t) => t?.type == type)

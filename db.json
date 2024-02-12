@@ -262,6 +262,28 @@
       "ticketLine": 4,
       "ticketCount": 4,
       "id": 13
+    },
+    {
+      "userId": "1",
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "price": "50000",
+      "totolPrice": 200000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 2,
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "price": "50000",
+      "totolPrice": 100000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 1,
+      "id": 15
     }
   ],
   "tickets-prices": [
@@ -373,7 +395,7 @@
       "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
       "ticketId": 9,
       "ticketLine": 9,
-      "ticketLineCount": 6,
+      "ticketLineCount": 4,
       "price": "100000",
       "id": 16
     },
@@ -381,7 +403,7 @@
       "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
       "ticketId": 9,
       "ticketLine": 9,
-      "ticketLineCount": 6,
+      "ticketLineCount": 5,
       "price": "100000",
       "id": 17
     },

@@ -3,9 +3,16 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "./style.css";
 import Cards from "../../components/cards";
 import { useRef } from "react";
+import { useQuery } from "react-query";
+import axios from "axios";
+import Loading from "../../components/loding";
 
 const Menu = () => {
   const sliderRef = useRef(null);
+
+  const { data: ticketsData, isLoading } = useQuery("tickets-data", () => {
+    return axios.get("http://localhost:3001/tickets");
+  });
 
   const next = () => {
     if (sliderRef.current) {
@@ -74,13 +81,35 @@ const Menu = () => {
           <RightOutlined />
         </Button>
       </div>
-      <div className="mt-20">
-        <Cards type={"kids"} title={"Bolalar uchun"} />
 
-        <Cards type={"theaters"} title={"Teatrlar"} />
+      {isLoading ? (
+        <div className="">
+          <Loading />
+        </div>
+      ) : (
+        <div className="mt-20">
+          <Cards
+            ticketsData={ticketsData}
+            isLoading={isLoading}
+            type={"kids"}
+            title={"Bolalar uchun"}
+          />
 
-        <Cards type={"hockey"} title={"Hokkey"} />
-      </div>
+          <Cards
+            ticketsData={ticketsData}
+            isLoading={isLoading}
+            type={"theaters"}
+            title={"Teatrlar"}
+          />
+
+          <Cards
+            ticketsData={ticketsData}
+            isLoading={isLoading}
+            type={"hockey"}
+            title={"Hokkey"}
+          />
+        </div>
+      )}
     </>
   );
 };
