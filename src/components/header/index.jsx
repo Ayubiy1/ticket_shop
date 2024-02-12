@@ -25,7 +25,7 @@ const Header = () => {
 
   const { data } = useQuery(["orders-prices-data"], () => {
     return axios
-      .get(`http://localhost:3001/orders?userId=${+userID}`)
+      .get(`https://todo-task-4qt6.onrender.com//orders?userId=${+userID}`)
       .then((response) => response.data)
       .catch((error) => {
         console.error("Error fetching ticket prices data:", error);

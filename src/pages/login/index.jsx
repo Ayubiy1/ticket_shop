@@ -25,7 +25,7 @@ const LoginPage = ({ setuserId }) => {
   };
 
   const { data } = useQuery("users", () => {
-    return axios.get("http://localhost:3001/users");
+    return axios.get("https://todo-task-4qt6.onrender.com/users");
   });
 
   const navigator = useNavigate();

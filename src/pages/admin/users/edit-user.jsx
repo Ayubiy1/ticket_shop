@@ -7,7 +7,7 @@ const SeeUser = ({ userData, handleCancel, isModalOpen }) => {
   const userIdAdmin = useSelector((state) => state?.slices?.userIdAdmin);
 
   //   const { data } = useQuery("admin-user", () => {
-  //     return axios.get(`http://localhost:3001/users?id=${userIdAdmin}`);
+  //     return axios.get(`users?id=${userIdAdmin}`);
   //   });
 
   return (

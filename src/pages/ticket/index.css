@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 .btn {
-  color: white;
+  color: white !important;
   background-color: #02b0e4;
   border: none;
 }

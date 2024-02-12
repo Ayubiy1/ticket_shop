@@ -12,7 +12,7 @@ const Busket = () => {
   const { data: ticketsData, isLoading: ticketsIsLoding } = useQuery(
     "orders-data",
     () => {
-      return axios.get("http://localhost:3001/orders");
+      return axios.get("https://todo-task-4qt6.onrender.com/orders");
     }
   );
 

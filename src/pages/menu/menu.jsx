@@ -11,7 +11,7 @@ const Menu = () => {
   const sliderRef = useRef(null);
 
   const { data: ticketsData, isLoading } = useQuery("tickets-data", () => {
-    return axios.get("http://localhost:3001/tickets");
+    return axios.get("https://todo-task-4qt6.onrender.com/tickets");
   });
 
   const next = () => {

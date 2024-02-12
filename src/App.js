@@ -34,7 +34,7 @@ function App() {
 
   const { data } = useQuery("user-one", () => {
     return axios
-      .get(`http://localhost:3001/users?id=${userID}`)
+      .get(`https://todo-task-4qt6.onrender.com/users?id=${userID}`)
       .then((response) => {
         response?.data?.map((data) => {
           setUserType(data?.role);
@@ -49,7 +49,7 @@ function App() {
 
   const { data: ticketPricesData } = useQuery(["tickets-prices-data"], () => {
     return axios
-      .get("http://localhost:3001/tickets-prices")
+      .get("https://todo-task-4qt6.onrender.com/tickets-prices")
       .then((response) => response.data)
       .catch((error) => {
         console.error("Error fetching ticket prices data:", error);
@@ -59,7 +59,9 @@ function App() {
 
   const { mutate } = useMutation(
     (id) => {
-      return axios.delete(`http://localhost:3001/tickets-prices/${id}`);
+      return axios.delete(
+        `https://todo-task-4qt6.onrender.com/tickets-prices/${id}`
+      );
     },
     {
       onSuccess: (response) => {

@@ -17,10 +17,10 @@ const Users = () => {
   const dispatch = useDispatch();
 
   const { data } = useQuery("admin-users", () => {
-    return axios.get("http://localhost:3001/users");
+    return axios.get("https://todo-task-4qt6.onrender.com/users");
   });
   const { data: userData } = useQuery("admin-user", () => {
-    return axios.get(`http://localhost:3001/users?id=${userId}`);
+    return axios.get(`https://todo-task-4qt6.onrender.com/users?id=${userId}`);
   });
 
   const showModal = (id) => {

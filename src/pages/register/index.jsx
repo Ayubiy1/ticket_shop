@@ -23,12 +23,12 @@ const RegisterPage = ({ setuserId }) => {
   const queryClient = useQueryClient();
 
   const { data } = useQuery("users", () => {
-    return axios.get("http://localhost:3001/users");
+    return axios.get("https://todo-task-4qt6.onrender.com/users");
   });
 
   const { mutate } = useMutation(
     (newData) => {
-      return axios.post("http://localhost:3001/users", newData);
+      return axios.post("https://todo-task-4qt6.onrender.com/users", newData);
     },
     {
       onSuccess: () => {

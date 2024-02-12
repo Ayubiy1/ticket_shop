@@ -25,7 +25,7 @@ const PriceCards = ({ img }) => {
     isError,
   } = useQuery(["tickets-prices-data", id], () => {
     return axios
-      .get("http://localhost:3001/tickets-prices")
+      .get("https://todo-task-4qt6.onrender.com/tickets-prices")
       .then((response) => response.data)
       .catch((error) => {
         console.error("Error fetching ticket prices data:", error);
@@ -33,9 +33,13 @@ const PriceCards = ({ img }) => {
       });
   });
 
-  const { mutate, isLoading: butTicketLoading } = useMutation(
+  const {
+    mutate,
+    isLoading: butTicketLoading,
+    isSuccess,
+  } = useMutation(
     (newDate) => {
-      return axios.post("http://localhost:3001/orders", newDate);
+      return axios.post("https://todo-task-4qt6.onrender.com/orders", newDate);
     },
     {
       onSuccess: (response) => {
@@ -43,7 +47,7 @@ const PriceCards = ({ img }) => {
           "tickets-prices-data",
           "orders-prices-data",
         ]);
-        success();
+        // success();
       },
     }
   );
@@ -51,7 +55,7 @@ const PriceCards = ({ img }) => {
   const { mutate: mutateTickets } = useMutation(
     ({ newDataPrices, dataId }) => {
       return axios.put(
-        `http://localhost:3001/tickets-prices/${dataId}`,
+        `https://todo-task-4qt6.onrender.com/tickets-prices/${dataId}`,
         newDataPrices
       );
     },
@@ -178,15 +182,28 @@ const PriceCards = ({ img }) => {
                   <span>Chiptalar soni:</span> {ticket.ticketLineCount}
                 </Typography>
 
-                <Button
-                  className="btn w-[100%]"
-                  onClick={() => {
-                    buyTicket(index, ticket);
-                  }}
-                  disabled={!ticketCounts[index]?.count}
-                >
-                  Sotib olish
-                </Button>
+                {butTicketLoading && ticketCounts[index]?.count == index ? (
+                  <Button
+                    type="primary"
+                    loading
+                    disabled
+                    className="btn w-[100%]"
+                  >
+                    Loading
+                  </Button>
+                ) : (
+                  <>
+                    <Button
+                      className="btn w-[100%]"
+                      onClick={() => {
+                        buyTicket(index, ticket);
+                      }}
+                      disabled={!ticketCounts[index]?.count}
+                    >
+                      Sotib olish
+                    </Button>
+                  </>
+                )}
               </div>
             </Col>
           );

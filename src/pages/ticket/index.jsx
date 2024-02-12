@@ -92,7 +92,7 @@ const TicketPage = () => {
   const { data: ticketData, isLoading: ticketIsLoding } = useQuery(
     "ticket-data",
     () => {
-      return axios.get(`http://localhost:3001/tickets/${id}`);
+      return axios.get(`https://todo-task-4qt6.onrender.com/tickets/${id}`);
     }
   );
 

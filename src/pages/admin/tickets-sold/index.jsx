@@ -8,7 +8,7 @@ import { FaPen } from "react-icons/fa6";
 
 const TicketsSold = () => {
   const { data } = useQuery("admin-tickets", () => {
-    return axios.get("http://localhost:3001/orders");
+    return axios.get("https://todo-task-4qt6.onrender.com/orders");
   });
 
   const columns = [
