@@ -1,0 +1,15 @@
+.login {
+  background-image: url("https://img.freepik.com/free-photo/view-of-3d-cinema-theatre-room_23-2150866053.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login-form {
+  width: 400px !important;
+  padding: 15px;
+  backdrop-filter: blur(41px);
+  border-radius: 6px;
+}
+.ant-form-item-required {
+  color: white !important;
+}

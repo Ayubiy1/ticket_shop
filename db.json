@@ -1,0 +1,412 @@
+{
+  "users": [
+    {
+      "userName": "Email",
+      "fullName": "Email User",
+      "email": "email@example.com",
+      "password": "emailPassword",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "fullName": "dsdsD",
+      "userName": "dsds",
+      "email": "dsds",
+      "password": "dsdss",
+      "role": "user",
+      "id": 2
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "name": "Синий Трактор",
+      "startTime": "Fri Jan 05 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster/aTDmGmkd8cUIOvl58Vnb9DFn65gE8TWfdHO5dgnp.png",
+      "type": "kids",
+      "path": "kids",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 2,
+      "name": "MINECRAFT",
+      "startTime": "Fri Jan 02 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/sMlwlGEOFq8xleQHfOnNHefTPCfNacVLfms1DdAG.jpg",
+      "type": "kids",
+      "path": "kids",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 3,
+      "name": "Alisa g'aroyibotlar mamlakatida",
+      "startTime": "Fri Jan 12 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/ySSPvYm9iq5xbpZkIBiq8cjq2rdaSuKnq26VkcO8.jpg",
+      "type": "kids",
+      "path": "kids",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 4,
+      "name": "12 Месяцев” Музыкальная сказка",
+      "startTime": "Fri Jan 23 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/36TNZ8p0oPwGTTK7E6rQDTJhXQP1FYnqk9UkZ8cG.jpg",
+      "type": "kids",
+      "path": "kids",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 5,
+      "name": "ХОККЕЙНЫЙ СЕЗОН",
+      "startTime": "Fri Jan 17 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/g9RSRqtokRPUb6c74h8KvxmpGYbnHI7Z16G7jpUt.jpg",
+      "type": "hockey",
+      "path": "hockey",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 6,
+      "name": "HUMO - IRTISH",
+      "startTime": "Fri Jan 22 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/CQlmKWlF0jRIa1K0l56QseEZQe5Q4fs8kBhiQ2vl.jpg",
+      "type": "hockey",
+      "path": "hockey",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 7,
+      "name": "JAŃA JÍL TAMASHSASÍ",
+      "startTime": "Fri Jan 12 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/Jd4lZUi3jB34S3WTQref8fsPkP3gJ6rEUgR3nzdX.jpg",
+      "type": "hockey",
+      "path": "hockey",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 8,
+      "name": "P. Maskannining 'Qishloq sharafi' operasi",
+      "startTime": "Fri Jan 02 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/jSKVN6wCWh4AeYHphnuzr6S9nTmFAVTfBrHZ9vav.jpg",
+      "type": "theaters",
+      "path": "theaters",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 9,
+      "name": "Мама",
+      "startTime": "Fri Jan 12 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "type": "theaters",
+      "path": "theaters",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 10,
+      "name": "Мир Болливуда",
+      "startTime": "Fri Jan 15 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster/MhPCWdX2uqEiaJLcmbB5WOmDLrM8BhaJW6VrXQT0.png",
+      "type": "theaters",
+      "path": "theaters",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 12,
+      "name": "'Назм ва Наво' деб номланган концерт дастури",
+      "startTime": "Fri Jan 02 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/G0IImAzECQzbqg0ImbJ9nTAGiZfMsP2BQBAokvuC.jpg",
+      "type": "theaters",
+      "path": "theaters",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 13,
+      "name": "Vodiy Yulduzlari",
+      "startTime": "Fri Jan 02 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/IpDiSWUiKRjryudRWAs8IJBPpZc9axffSqXfjeM1.jpg",
+      "type": "concerts",
+      "path": "concerts",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 14,
+      "name": "Ona Yurt Ohanglari GALA KONSERT",
+      "startTime": "Fri Jan 12 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster/Nb1kBVitnNDYxYBz7TBVyhZSnG0cWwwm16mJ9kbH.png",
+      "type": "concerts",
+      "path": "concerts",
+      "price": 300000,
+      "ticketCount": 4
+    },
+    {
+      "id": 15,
+      "name": "Вечер Серенад",
+      "startTime": "Fri Jan 15 2024 18:12:04 GMT+0500 (Uzbekistan Standard Time)",
+      "img": "https://cdn.iticket.uz/event/poster_bg/KicBDWE26xfQ2UsSXURvKEdcXFiWnZjdnRX709Bh.jpg",
+      "type": "concerts",
+      "path": "concerts",
+      "price": 300000,
+      "ticketCount": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "price": 300000,
+      "ticketCount": 4,
+      "totolPrice": "350000",
+      "ticketPriceId": 8
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "price": 300000,
+      "ticketCount": 4,
+      "totolPrice": "350000",
+      "ticketPriceId": 8
+    },
+    {
+      "userId": 2,
+      "price": "50000",
+      "totolPrice": 250000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 5,
+      "id": 6
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/poster/aTDmGmkd8cUIOvl58Vnb9DFn65gE8TWfdHO5dgnp.png",
+      "price": "50000",
+      "totolPrice": null,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 2,
+      "id": 7
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/poster_bg/sMlwlGEOFq8xleQHfOnNHefTPCfNacVLfms1DdAG.jpg",
+      "price": "50000",
+      "totolPrice": null,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 2,
+      "id": 8
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/poster_bg/Jd4lZUi3jB34S3WTQref8fsPkP3gJ6rEUgR3nzdX.jpg",
+      "price": "50000",
+      "totolPrice": 150000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 3,
+      "id": 9
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/poster/aTDmGmkd8cUIOvl58Vnb9DFn65gE8TWfdHO5dgnp.png",
+      "price": "50000",
+      "totolPrice": 170000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 2,
+      "id": 10
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/poster_bg/sMlwlGEOFq8xleQHfOnNHefTPCfNacVLfms1DdAG.jpg",
+      "price": "50000",
+      "totolPrice": null,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 3,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "price": "50000",
+      "totolPrice": null,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 4,
+      "id": 12
+    },
+    {
+      "userId": "2",
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "price": "50000",
+      "totolPrice": 340000,
+      "ticketPriceId": 8,
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketCount": 4,
+      "id": 13
+    }
+  ],
+  "tickets-prices": [
+    {
+      "img": "https://cdn.iticket.uz/event/poster/aTDmGmkd8cUIOvl58Vnb9DFn65gE8TWfdHO5dgnp.png",
+      "ticketId": 1,
+      "ticketLine": 1,
+      "ticketLineCount": 8,
+      "price": "100000",
+      "id": 1
+    },
+    {
+      "img": "https://cdn.iticket.uz/event/poster/aTDmGmkd8cUIOvl58Vnb9DFn65gE8TWfdHO5dgnp.png",
+      "ticketId": 1,
+      "ticketLine": 1,
+      "ticketLineCount": 8,
+      "price": "100000",
+      "id": 2
+    },
+    {
+      "img": "https://cdn.iticket.uz/event/poster_bg/sMlwlGEOFq8xleQHfOnNHefTPCfNacVLfms1DdAG.jpg",
+      "ticketId": 2,
+      "ticketLine": 2,
+      "ticketLineCount": 2,
+      "price": "100000",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "img": "",
+      "ticketId": 3,
+      "ticketLine": 3,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "id": 6,
+      "img": "",
+      "ticketId": 3,
+      "ticketLine": 3,
+      "ticketLineCount": 31,
+      "price": "50000"
+    },
+    {
+      "img": "",
+      "ticketId": 4,
+      "ticketLine": 4,
+      "ticketLineCount": 40,
+      "price": "100000,",
+      "id": 7
+    },
+    {
+      "id": 9,
+      "img": "",
+      "ticketId": 5,
+      "ticketLine": 5,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "id": 10,
+      "img": "",
+      "ticketId": 5,
+      "ticketLine": 5,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "id": 11,
+      "img": "",
+      "ticketId": 6,
+      "ticketLine": 6,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "img": "https://cdn.iticket.uz/event/poster_bg/Jd4lZUi3jB34S3WTQref8fsPkP3gJ6rEUgR3nzdX.jpg",
+      "ticketId": 7,
+      "ticketLine": 7,
+      "ticketLineCount": 7,
+      "price": "100000",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "img": "",
+      "ticketId": 7,
+      "ticketLine": 7,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "id": 14,
+      "img": "",
+      "ticketId": 8,
+      "ticketLine": 8,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "id": 15,
+      "img": "",
+      "ticketId": 8,
+      "ticketLine": 8,
+      "ticketLineCount": 10,
+      "price": "50000"
+    },
+    {
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "ticketId": 9,
+      "ticketLine": 9,
+      "ticketLineCount": 6,
+      "price": "100000",
+      "id": 16
+    },
+    {
+      "img": "https://cdn.iticket.uz/event/no-poster-bg.jpg",
+      "ticketId": 9,
+      "ticketLine": 9,
+      "ticketLineCount": 6,
+      "price": "100000",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "img": "",
+      "ticketId": 10,
+      "ticketLine": 10,
+      "ticketLineCount": 10,
+      "price": "75000"
+    },
+    {
+      "id": 19,
+      "img": "",
+      "ticketId": 10,
+      "ticketLine": 10,
+      "ticketLineCount": 10,
+      "price": "65000"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "name": "Ayub",
+      "userName": "Admin Ayub"
+    }
+  ]
+}

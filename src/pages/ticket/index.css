@@ -1,0 +1,19 @@
+.price {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+  background-color: #02b0e4;
+  width: 161px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn {
+  color: white;
+  background-color: #02b0e4;
+  border: none;
+}
+.btn:hover {
+  color: white !important;
+}
