@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import axios from "axios";
-import { useLocalStorageState } from "ahooks";
+import { useLocalStorageState, useTitle } from "ahooks";
 import CategoryCardsPage from "./pages/category-cards";
 import Menu from "./pages/menu/menu";
 import TicketPage from "./pages/ticket";
@@ -25,6 +25,8 @@ function App() {
   const [userType, setUserType] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
+
+  useTitle("Tickets");
 
   const [userId, setuserId] = useLocalStorageState("user-id-app", {
     defaultValue: false,

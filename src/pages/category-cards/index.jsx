@@ -5,10 +5,12 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useQuery } from "react-query";
 import { useNavigate, useParams } from "react-router";
 import Loading from "../../components/loding";
+import { useTitle } from "ahooks";
 
 const CategoryCardsPage = () => {
   const { type, id } = useParams();
   const navigator = useNavigate();
+  useTitle(type.toLowerCase());
 
   const { data: ticketsData, isLoading } = useQuery("tickets-data", () => {
     return axios.get("http://localhost:3001/tickets");

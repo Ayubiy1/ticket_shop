@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import PriceCards from "./price-csrds";
 import { Empty } from "antd";
+import { useTitle } from "ahooks";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -78,7 +79,7 @@ export function BasicTabs({ img }) {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <div className="text-white">
-          <Empty   description={false} />
+          <Empty description={false} />
         </div>
       </CustomTabPanel>
     </Box>
@@ -94,6 +95,8 @@ const TicketPage = () => {
       return axios.get(`http://localhost:3001/tickets/${id}`);
     }
   );
+
+  useTitle(ticketData?.data?.name);
 
   return (
     <>
