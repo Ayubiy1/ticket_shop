@@ -208,10 +208,38 @@ const Header = () => {
         </Form>
 
         <ul className="flex flex-col gap-4 items-start justify-center ul-drawer">
-          <li>Barcha tadbirlar</li>
-          <li>Konsertlar</li>
-          <li>Madaniy tadbirlar</li>
-          <li>Bolalar</li>
+          <li
+            onClick={() => {
+              navigate(`/`);
+              onClose();
+            }}
+          >
+            Barcha tadbirlar
+          </li>
+          <li
+            onClick={() => {
+              navigate(`concerts/tickets`);
+              onClose();
+            }}
+          >
+            Konsertlar
+          </li>
+          <li
+            onClick={() => {
+              navigate(`theaters/tickets`);
+              onClose();
+            }}
+          >
+            Teatrlar
+          </li>
+          <li
+            onClick={() => {
+              navigate(`kids/tickets`);
+              onClose();
+            }}
+          >
+            Bolalar
+          </li>
         </ul>
       </Drawer>
 
