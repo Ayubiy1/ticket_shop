@@ -47,6 +47,10 @@
   color: #fff;
 }
 
+.ant-drawer-content-wrapper {
+  z-index: 9999 !important;
+}
+
 @media screen and (max-width: 500px) {
   .ul-two,
   .basket,

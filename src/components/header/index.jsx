@@ -80,7 +80,7 @@ const Header = () => {
 
   return (
     <div>
-      <div style={{ position: "sticky", top: 0, zIndex: 9999 }}>
+      <div style={{ position: "sticky", top: 0 }}>
         <div className="flex items-center justify-between py-5">
           <a
             className="logo"
@@ -186,7 +186,13 @@ const Header = () => {
         </li>
       </ul>
 
-      <Drawer title="Menu" placement="left" onClose={onClose} open={open}>
+      <Drawer
+        title="Menu"
+        placement="left"
+        onClose={onClose}
+        open={open}
+        style={{ zIndex: "99999" }}
+      >
         <Form form={form} onFinish={onFinishSearch}>
           <Form.Item
             name="search"
