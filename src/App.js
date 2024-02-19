@@ -70,11 +70,13 @@ function App() {
     }
   );
 
+  console.log(location.pathname);
+
   useEffect(() => {
     if (location.pathname === "/" && userId == false) {
       navigate("/login");
     }
-    if (!userId) {
+    if (!userId && location.pathname != "/register") {
       setuserId(false);
       navigate("/login");
     }
