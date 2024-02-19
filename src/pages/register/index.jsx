@@ -21,6 +21,7 @@ const RegisterPage = ({ setuserId }) => {
   };
 
   const queryClient = useQueryClient();
+  const navigator = useNavigate();
 
   const { data } = useQuery("users", () => {
     return axios.get("https://todo-task-4qt6.onrender.com/users");
@@ -34,11 +35,10 @@ const RegisterPage = ({ setuserId }) => {
       onSuccess: () => {
         queryClient.invalidateQueries(["users"]);
         success();
+        navigator("/login");
       },
     }
   );
-
-  const navigator = useNavigate();
 
   const onFinish = (values) => {
     const foundUser = data?.data.find(
